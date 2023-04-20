@@ -20,7 +20,7 @@ func TestEval(t *testing.T) {
 
 	act := &Activity{}
 	tc := test.NewActivityContext(act.Metadata())
-	input := &Input{AnInput: "test"}
+	input := &Input{Num1: 1, Num2: 2}
 	err := tc.SetInputObject(input)
 	assert.Nil(t, err)
 
@@ -31,5 +31,5 @@ func TestEval(t *testing.T) {
 	output := &Output{}
 	err = tc.GetOutputObject(output)
 	assert.Nil(t, err)
-	assert.Equal(t, "test", output.AnOutput)
+	assert.Equal(t, 3, output.Sum)
 }
