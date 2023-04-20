@@ -1,7 +1,7 @@
 {
   "name": "adder_activity",
   "type": "flogo:activity",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Adder Activity",
   "description": "Adder Activity",
   "homepage": "https://github.com/nieyanzhai/flogo_adder_activity",
